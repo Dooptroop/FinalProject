@@ -39,7 +39,7 @@
 		mysqli_commit($con);
 
 		echo "<h2>Thanks, ".$fname." ".$lname.", for signing up to Rebel Cloud Cantina!</h2></br>";
-		echo "<a href=\"login.html\">Click here to return to the login page</a>";
+		echo "<a href=\"../login.html\">Click here to return to the login page</a>";
 		mkdir("C:/xampp/htdocs/FinalProject/members/$email", 0733, true); //creates a folder for each unique member
 	}
 

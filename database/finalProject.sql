@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2014 at 08:16 PM
+-- Generation Time: Nov 29, 2014 at 11:20 PM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `finalProject`
+-- Database: `finalproject`
 --
 
 -- --------------------------------------------------------
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `members` (
   `firstname` varchar(15) NOT NULL,
   `lastname` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `password` varchar(20) NOT NULL
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -38,8 +38,7 @@ CREATE TABLE IF NOT EXISTS `members` (
 --
 
 INSERT INTO `members` (`firstname`, `lastname`, `email`, `password`) VALUES
-('Taylor', 'Morrow', 'tmorrow@gmail.com', '*D37C49F9CBEFBF8B6F4'),
-('Mike', 'Dupree', 'mrdupree@gmail.com', '*D37C49F9CBEFBF8B6F4');
+('Taylor', 'Morrow', 'tmorrow@gmail.com', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

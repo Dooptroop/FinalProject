@@ -1,7 +1,7 @@
 <!--
 	COSC 213 Final Project
 	Taylor Morrow - 300189378
-	Mike Dupree - 300
+	Mike Dupree - 300182241
 -->
 
 <?php
@@ -11,7 +11,7 @@
 		!(filter_input(INPUT_POST,'email')) || 
 		!(filter_input(INPUT_POST, 'password'))) {
 			
-			header("Location: register.html");
+			header("Location: ../register.html");
 			exit;
 	}
 	
@@ -29,8 +29,8 @@
 	$select_res = mysqli_query($con, $select_sql) or die(mysqli_error($con));
 
 	if(mysqli_num_rows($select_res) > 0){ //if the email is located in the table
-		echo "Your email address has already been used! Please use a different email.</br>";
-		echo "<a href=\"register.html\">Click here to return to the registration page!</a>";
+		$display = "<h2>Your email address has already been used!</br>Please use a different email address.</h2>
+					<a id='link' href=\"../register.html\">Return to the registration page!</a>";
 	} 
 	else{
 		mysqli_query($con,"INSERT INTO members (firstname, lastname, email, password)
@@ -38,8 +38,9 @@
 
 		mysqli_commit($con);
 
-		echo "<h2>Thanks, ".$fname." ".$lname.", for signing up to Rebel Cloud Cantina!</h2></br>";
-		echo "<a href=\"../login.html\">Click here to return to the login page</a>";
+		$display = "<h2>Thanks, ".$fname." ".$lname.", for signing up with Rebel Cloud Cantina!</h2></br>
+				    <a id='link' href=\"../login.html\">Click here to return to the login page</a>";
+
 		mkdir("C:/xampp/htdocs/FinalProject/members/$email", 0733, true); //creates a folder for each unique member
 	}
 
@@ -56,7 +57,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Rebel Cloud Cantina</title>
+		<link rel="stylesheet" type="text/css" href="../css/registerphp.css">
 	</head>
-	<body>
+	<body class = "bg">
+		<div class="display">
+			<?php echo "$display"; ?>
+		</div>
 	</body>
 </html>

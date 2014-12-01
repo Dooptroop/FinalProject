@@ -30,8 +30,8 @@
 	} else {
 		$display = "<h2>This account is not registered!</br>
 					Please make sure to register before trying to log in.</h2>
-					<a href=\"../register.html\">Register here!</a></br>
-					<a href=\"../login.html\">Login page</a>";				
+					<a id='link' href=\"../register.html\">Register here!</a>
+					<a id='link' href=\"../login.html\">Login page</a>";				
 	}
 ?>
 
@@ -39,8 +39,11 @@
 <html>
 	<head>
 		<title>Rebel Cloud Cantina</title>
+		<link rel="stylesheet" type="text/css" href="../css/loginphp.css">
 	</head>
-	<body>
-		<?php echo "$display"; ?>	
+	<body class="bg">
+		<div class="display">
+			<?php echo "$display"; ?>
+		</div>	
 	</body>
 </html>

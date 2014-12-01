@@ -1,0 +1,47 @@
+/*
+	COSC 213 Final Project
+	Taylor Morrow - 300189378
+	Mike Dupree - 300182241
+*/
+
+.display{
+	text-align: center;	
+	font-family: sans-serif;
+}
+
+#header{
+	margin: 20px;
+}
+
+#link{
+		padding: 5px;
+		border-style: solid;
+		border-width: 2px;
+		text-decoration: none;
+		font-weight: bold;
+		color:black;
+		border-radius: 5px;
+
+}
+
+#link:hover{
+	background-color: grey;
+}
+
+#logout{
+
+		position: fixed;
+		left:20px;
+		top:20px;
+		padding: 5px;
+		border-style: solid;
+		border-width: 2px;
+		text-decoration: none;
+		font-weight: bold;
+		color:black;
+		border-radius: 5px;
+}
+
+#logout:hover{
+	background-color: brown;
+}

@@ -7,7 +7,7 @@
 <?php 
 	if (filter_input (INPUT_COOKIE, 'auth') == "1") {
 		$display = "<h2 id='header'>You have successfully logged in!</h2>
-					<p>Navigate through the links below as you wish!</p>
+					<p id='nav'>Navigate through the links below as you wish!</p>
 					<a id='link' href=\"../contact.html\">Contact Us!</a></br></br>
 					<a id='logout' href=\"../index.html\">Log out</a>";
 	} else {
@@ -23,9 +23,13 @@
 		<title>Rebel Cloud Cantina</title>
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
 	</head>
-	<div class="display">
-		<body>
-			<?php echo "$display"; ?>
-		</body>
+	<div id="main">
+		<div id="form">
+			<div class="display">
+				<body class = "bg">
+					<?php echo "$display"; ?>
+				</body>
+			</div>
+		</div>
 	</div>
 </html>

@@ -4,14 +4,17 @@
 	Mike Dupree - 300182241
 */
 
-
+#bg{
+		background-image: url("../images/darth.jpg");
+		background-size: 100% 143%;
+		background-repeat: no-repeat;
+}
 
 #form{
 		width: 600px;
 		height: 610px;
 		float: left;
 		padding: 10px 50px 0;
-		background-color: white;
 		margin:2% 30%;
 		border-radius: 5px;
 }

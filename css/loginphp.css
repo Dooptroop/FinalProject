@@ -5,15 +5,15 @@
 */
 
 .display{
-	text-align: center;	
-	font-family: sans-serif;
+		text-align: center;	
+		font-family: sans-serif;
 }
 
 .bg{
-	background-image: url("../images/rebel2.png");
-	background-size: 65% 600%;
-	background-repeat: no-repeat;
-	background-position: 50% -38%
+		background-image: url("../images/grievous.jpg");
+		background-size: 65% 600%;
+		background-repeat: no-repeat;
+		background-position: 0% -44%
 }
 
 #link{
@@ -24,6 +24,7 @@
 		font-weight: bold;
 		color:black;
 		border-radius: 5px;
+
 }
 
 #link:hover{

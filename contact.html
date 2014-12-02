@@ -11,21 +11,21 @@
 		<title>Rebel Cloud Cantina</title>
 		<link rel="stylesheet" type="text/css" href="css/contact.css">
 	</head>
-	<body>
+	<body id="bg">
 		<div id="form">
 			<form action="webpages/contact.php" method="POST">
 				<h1>Contact Us!</h1>
 				<label class="f1">
-					<input class="name" type="text" placeholder="What's your name?">
+					<input class="name" type="text" name="username" placeholder="What's your name?">
 				</label>
 				<label class="f2">
-					<input class="email" type="text" placeholder="Email Address">
+					<input class="email" type="text" name="email" placeholder="Email Address">
 				</label>
 				<label class="f3">
-					<textarea class="message" placeholder="Type your message here!"></textarea>
+					<textarea class="message" name="message" placeholder="Type your message here!"></textarea>
 				</label>
 				<label class="f4">
-					<select>
+					<select name="type">
 						<option value="Feedback">Feedback</option>
 						<option value="Complaint">Complaint</option>
 					</select>

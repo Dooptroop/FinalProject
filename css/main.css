@@ -5,12 +5,34 @@
 */
 
 .display{
-	text-align: center;	
-	font-family: sans-serif;
+		text-align: center;	
+		font-family: sans-serif;
+}
+
+.bg{
+		background-image: url("../images/xwing.jpg");
+		background-size: 100% 140%;
+		background-repeat: no-repeat;
+}
+
+#nav{
+		font-weight: bold;
+}
+
+#main{
+		width: 400px;
+		height: 150px;
+		margin: 300px auto;
+}
+
+#form{
+		float: left;
+		width: 500px;
+		height: 40px;
 }
 
 #header{
-	margin: 20px;
+		margin: 20px;
 }
 
 #link{
@@ -21,7 +43,6 @@
 		font-weight: bold;
 		color:black;
 		border-radius: 5px;
-
 }
 
 #link:hover{
@@ -29,7 +50,6 @@
 }
 
 #logout{
-
 		position: fixed;
 		left:20px;
 		top:20px;
@@ -43,5 +63,5 @@
 }
 
 #logout:hover{
-	background-color: brown;
-}
+		background-color: brown;
+}	

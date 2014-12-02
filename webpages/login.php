@@ -28,10 +28,11 @@
 		header("Location: main.php");
 
 	} else {
-		$display = "<h2>This account is not registered!</br>
-					Please make sure to register before trying to log in.</h2>
-					<a id='link' href=\"../register.html\">Register here!</a>
-					<a id='link' href=\"../login.html\">Login page</a>";				
+		$display = "<div id='form'>
+						<h2>This account is not registered!</br>Please make sure to register before trying to log in.</h2>
+						<a id='link' href=\"../register.html\">Register here!</a>
+						<a id='link' href=\"../login.html\">Login page</a>
+					</div>";				
 	}
 ?>
 

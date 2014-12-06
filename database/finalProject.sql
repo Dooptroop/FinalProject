@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2014 at 09:11 AM
+-- Generation Time: Dec 06, 2014 at 02:59 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS `contact` (
 --
 
 INSERT INTO `contact` (`id`, `username`, `email`, `message`) VALUES
-(1, 'Taylor Morrow', 'taylormorrow93@hotmail.com', 'Cool pictures!');
+(1, 'Taylor Morrow', 'tmorrow@gmail.com', 'Cool website & pictures!');
 
 -- --------------------------------------------------------
 
@@ -58,7 +58,8 @@ CREATE TABLE IF NOT EXISTS `members` (
 --
 
 INSERT INTO `members` (`firstname`, `lastname`, `email`, `password`) VALUES
-('John', 'Snow', 'jsnow@gmail.com', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004');
+('John', 'Snow', 'jsnow@gmail.com', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004'),
+('Daniel', 'Ling', 'dling@gmail.com', '*D37C49F9CBEFBF8B6F4B165AC703AA271E079004');
 
 --
 -- Indexes for dumped tables

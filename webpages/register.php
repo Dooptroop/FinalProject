@@ -9,7 +9,8 @@
 	if (!(filter_input(INPUT_POST,'firstname')) || 
 		!(filter_input(INPUT_POST,'lastname')) || 
 		!(filter_input(INPUT_POST,'email')) || 
-		!(filter_input(INPUT_POST, 'password'))) {
+		!(filter_input(INPUT_POST, 'password')) ||
+		!(filter_input(INPUT_POST, 'passwordcheck'))) {
 			
 			header("Location: ../register.html");
 			exit;
@@ -21,6 +22,7 @@
 	$lname = $_POST['lastname'];
 	$email = strtolower($_POST['email']);
 	$passwd = $_POST['password'];
+	$passwdchk = $_POST['passwordcheck'];
 	
 	$taremail= filter_input(INPUT_POST, 'email');
 
@@ -31,7 +33,11 @@
 	if(mysqli_num_rows($select_res) > 0){ //if the email is located in the table
 		$display = "<h2>Your email address has already been used!</br>Please use a different email address.</h2>
 					<a id='link' href=\"../register.html\">Return to the registration page!</a>";
-	} 
+	}
+	else if($_POST['password'] != $_POST['passwordcheck']){
+		$display = "<h2>Oops! Your password does not match what you originally put in.</br>Please try again.</h2>
+					<a id='link' href=\"../register.html\">Return to the registration page!</a>";
+	}
 	else{
 		mysqli_query($con,"INSERT INTO members (firstname, lastname, email, password)
 						   VALUES ('$fname', '$lname', '$email', PASSWORD('$passwd'))");

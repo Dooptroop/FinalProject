@@ -9,6 +9,7 @@
 		$display = "<h2 id='header'>You have successfully logged in!</h2>
 					<p id='nav'>Navigate through the links below as you wish!</p>
 					<a id='link' href=\"../contact.html\">Contact Us!</a></br></br>
+					<a id='link' href=\"forms.php\">Submitted Forms</a></br</br>
 					<a id='logout' href=\"../index.html\">Log out</a>";
 	} else {
 		header("Location: ../login.html");

@@ -58,8 +58,9 @@
 		border-width: 2px;
 		text-decoration: none;
 		font-weight: bold;
-		color:black;
+		color: white;
 		border-radius: 5px;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #logout:hover{
